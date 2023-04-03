@@ -1,0 +1,20 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exerc_2;
+
+/**
+ *
+ * @author Laís Isabella
+ */
+public class Exerc_2 {
+
+    public static void main(String[] args) {
+        Data data1 = new Data(13, 8, 2004);
+        metodos chama_metodos = new metodos();
+        chama_metodos.imprime(data1);
+        
+    }
+    
+}
