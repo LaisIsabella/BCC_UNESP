@@ -1,0 +1,33 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package aula_29.pkg03;
+
+/**
+ *
+ * @author Laís Isabella
+ */
+public class Aula_2903 {
+
+    public static void main(String[] args) {
+        pessoa Maria = new pessoa("Maria", 83, null, null);
+        pessoa Salvina = new pessoa("Salvina", 79, null, null);
+        pessoa Valdecir = new pessoa ("Valdecir", 70, null, null);
+        pessoa Natalicio = new pessoa ("Natalicio", 59, Maria, null);
+        pessoa Marinalva = new pessoa ("Marinalva", 55, Salvina, null);
+        pessoa Edilson = new pessoa ("Edilson", 45, Valdecir, null);
+        pessoa Gislaine = new pessoa ("Gislaine", 40, Marinalva, Natalicio);
+        pessoa Lais = new pessoa("Laís", 18, Gislaine, Edilson);
+        imprime imprime_pessoa = new imprime();
+        imprime_pessoa.imprime_arvore(Lais);
+        
+        
+        
+        
+       
+        
+        
+    }
+    
+}
