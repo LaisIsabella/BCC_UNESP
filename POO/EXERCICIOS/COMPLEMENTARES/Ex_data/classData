@@ -1,0 +1,106 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package exerc_2;
+
+/**
+ *
+ * @author Laís Isabella
+ */
+public class Data {
+    private int dia;
+    private int mes;
+    private int ano;
+    private String mesExtenso;
+    private String data_completa;
+    
+    public Data (int dia, int mes, int ano){
+        this.dia = dia;
+        this.mes = mes;
+        this.ano = ano;
+    }
+
+    public int getDia() {
+        return dia;
+    }
+
+    public int getMes() {
+        return mes;
+    }
+
+    public int getAno() {
+        return ano;
+    }
+
+    public String getMesExtenso() {
+        switch(mes){
+            case 1: 
+                return "Janeiro";
+             
+            case 2: 
+                return "Fevereiro";
+            
+            case 3: 
+                return "Março";
+                
+            case 4: 
+                return "Abril";
+            
+            case 5: 
+                return "Maio";
+            
+            case 6:
+                return "Junho";
+                
+            case 7:
+                return "Julho";
+                
+            case 8:
+                return "Agosto";
+                
+            case 9:
+                return "Setembro";
+            
+            case 10:
+                return "Outubro";
+            
+            case 11:
+                return "Novembro";
+                
+            case 12: 
+                return "Dezembro";   
+        }
+        return "Mês inexistente";//caso o mês nao seja valido, 
+                                   //o primeiro if nem deixa entrar nesse metodo, mas ok.
+    }
+
+    public String getData_completa() {
+        data_completa = dia + "/" + mes + "/" + ano;
+        return data_completa;
+    }
+    
+    
+
+    public void setDia(int dia) {
+        this.dia = dia;
+    }
+
+    public void setMes(int mes) {
+        this.mes = mes;
+    }
+
+    public void setAno(int ano) {
+        this.ano = ano;
+    }
+
+    public void setMesExtenso(String mesExtenso) {
+        this.mesExtenso = mesExtenso;
+    }
+
+    public void setData_completa(String data_completa) {
+        this.data_completa = data_completa;
+    }
+    
+    
+}
