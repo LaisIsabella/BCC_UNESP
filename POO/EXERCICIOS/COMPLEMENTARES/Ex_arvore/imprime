@@ -1,0 +1,26 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package aula_29.pkg03;
+
+/**
+ *
+ * @author Laís Isabella
+ */
+public class imprime {
+        public String imprime_arvore(pessoa pess){
+        if(pess.getPai() == null|| pess.getMae()== null){
+            System.out.printf("\nA arvore da %s acaba nele(a)", pess.getMaeString());
+            return null;
+        }else{
+            System.out.println("Nome: "+ pess.getNome());
+            System.out.println("Mãe: "+ pess.getMaeString());
+            System.out.println("Pai: "+ pess.getPaiString());
+            imprime_arvore(pess.getMae());
+            imprime_arvore(pess.getPai());
+            return "existe";
+        }
+    }
+    
+}
