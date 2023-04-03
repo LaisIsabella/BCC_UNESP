@@ -1,0 +1,29 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package exerc_2;
+
+/**
+ *
+ * @author Laís Isabella
+ */
+public class metodos {
+        
+        public void imprime(Data data1){
+            if((data1.getDia()<1||data1.getDia()>31)||
+                    (data1.getMes()<1||data1.getMes()>12)||
+                    (data1.getAno()<1925||data1.getAno()>2020)){
+                System.out.println("A data é 01/01/1001");
+            }else{
+                System.out.printf("Dia: %d\n", data1.getDia());
+                System.out.printf("Mês: %d\n", data1.getMes());
+                System.out.printf("Ano: %d\n", data1.getAno());
+                System.out.println("\nMês por extenso: " + data1.getMesExtenso());
+                System.out.println("DD/MM/AAAA: " + data1.getData_completa());
+            }
+            
+        }
+        
+
+}
